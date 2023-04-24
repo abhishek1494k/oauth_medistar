@@ -17,7 +17,7 @@ passport.use(
     {
       clientID: process.env.google_clientID,
       clientSecret: process.env.google_clientSecret,
-      callbackURL: "http://localhost:4500/auth/google/callback",
+      callbackURL: "https://oauth-medistar.onrender.com/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, cb) {
       var { email } = profile._json;
@@ -77,7 +77,7 @@ passport2.use(
     {
       clientID: process.env.github_clientID,
       clientSecret: process.env.github_clientSecret,
-      callbackURL: "http://localhost:4500/auth/github/callback",
+      callbackURL: "https://oauth-medistar.onrender.com/auth/github/callback",
       scope: "user:email",
     },
     async function (accessToken, refreshToken, profile, done) {
