@@ -60,7 +60,7 @@ app.get(
       expiresIn: "1d",
     });
     res.redirect(
-      `http://127.0.0.1:5500/Frontend/index.html?&email=${user.email}&id=${token}&first_name=${user.first_name}&last_name=${user.last_name}`
+      `https://medistar-hospital-301.netlify.app/index.html?&email=${user.email}&id=${token}&first_name=${user.first_name}&last_name=${user.last_name}`
     );
   }
 );
